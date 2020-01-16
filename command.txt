@@ -1,0 +1,1 @@
+python main.py -src 0 -fName resultOutput -to C:/Users/khushboo.2.MEA/Documents/Khushboo/pallet-loading/object_detection/output/tempoutput/ -o C:/Users/khushboo.2.MEA/Documents/Khushboo/pallet-loading/object_detection/output/ -num-w 4 -q-size 10 -sf 50 -dbg True -cl 0.1 -c 0.8 -bf 0 -dr r2l --padding 0.05 --codeType barcode 

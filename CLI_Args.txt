@@ -1,0 +1,20 @@
+#Object detector app CLI arguments, for video files using TensorFlow Session Graph
+-v D:/TF_Object_Detection/object_detection/test_videos/test1.mp4 -o D:/TF_Object_Detection/object_detection/output/test1_v1_i3.avi -num-w 20
+
+#Object detector v2 app CLI arguments for video files using TensorFlow Session Graph
+-fName 20190228_155656_test -v D:/TF_Object_Detection/object_detection/test_videos/20190228_155656_test.mp4 -o D:/TF_Object_Detection/object_detection/output/ -to D:/TF_Object_Detection/object_detection/output/interim -east D:/TF_Object_Detection/object_detection/models/frozen_east_text_detection.pb -num-w 4 -q-size 10 -sf 50 -dbg True -cl 0.1 -c 0.8 -bf 0 -dr r2l --padding 0.05 --codeType ocr
+
+#Object counter v2 app CLI arguments, for video files using cv2.dnn.readFromTensorflow
+-i D:/TF_Object_Detection/object_detection/test_videos/20190227_130259_test.mp4 -o D:/TF_Object_Detection/object_detection/output/20190227_130259_test.avi -m D:/TF_Object_Detection/object_detection/conveyorBelt/frozen_inference_graph.pb -p D:/TF_Object_Detection/object_detection/conveyorBelt/graph.pbtxt -c 0.9 -l D:/TF_Object_Detection/object_detection/output/test1_log.txt
+
+#Object detector app CLI arguments, for image files. Can also be used for detect_and_extract_test.py
+-i D:/TF_Object_Detection/object_detection/test_images/WIN_20190222_12_53_39_Pro.jpg -o D:/TF_Object_Detection/object_detection/output/WIN_20190222_12_53_39_Pro.jpg
+
+#detection, tracking and counting app
+-i D:/TF_Object_Detection/object_detection/test_videos/test1.mp4 -o D:/TF_Object_Detection/object_detection/output/test1_trackAndCount.avi -m conveyorBelt -L D:/TF_Object_Detection/object_detection/data/ul_label_map.pbtxt -c 0.9
+
+#detect_and_extract_from_video.py
+-v D:/TF_Object_Detection/object_detection/test_videos/20190227_130259_test.mp4 -o D:/TF_Object_Detection/object_detection/output/thumbnailExtraction/ -lf D:/TF_Object_Detection/object_detection/output/thumbnailExtraction/20190227_130259_test_extractThumbnail.log -c 0.8 -num-w 4
+
+#test_reader_factory
+-fName 20190228_155656_test -o D:/TF_Object_Detection/object_detection/output/ -east D:/TF_Object_Detection/object_detection/models/frozen_east_text_detection.pb --padding 0.05 --codeType ocr

@@ -1,0 +1,16 @@
+Input queue will have a tuple consisting of frame number and the array representation of the image/video frame
+Output queue will have annotated images including bounding boxes around detected objects, the detection score and the label/class of the object
+Tracking queue will have TrackingQueueObjects which in turn is a wrapper class for TrackableObject
+
+Only the worker will read and write from the input and output queues. All other helper functions will either read from a TrackableObject or write to the tracking queue
+
+Traceback (most recent call last):
+  File "C:\Users\clwong\Anaconda3\envs\cvpy36\lib\multiprocessing\process.py", line 258, in _bootstrap
+    self.run()
+  File "C:\Users\clwong\Anaconda3\envs\cvpy36\lib\multiprocessing\process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\clwong\Anaconda3\envs\cvpy36\lib\multiprocessing\pool.py", line 103, in worker
+    initializer(*initargs)
+  File "D:\TF_Object_Detection\object_detection\trackAndDetect\trackingPoolWorker.py", line 380, in worker
+    update_tracker(frame_rgb,each_file,tempOutPath,category_index, coordThreshold, output_q)
+TypeError: update_tracker() missing 2 required positional arguments: 'detectedObjCounter' and 'counterline'

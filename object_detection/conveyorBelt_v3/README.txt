@@ -1,0 +1,1 @@
+This is the 3rd Object detection model trained to locate shipping boxes in an image/video frame. The source of the annotated images are frames from videos downloaded from YouTube. A single class Mobile Net SSD has been trained to detect the 'box' class

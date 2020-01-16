@@ -1,0 +1,3 @@
++		num_detections	array([100.], dtype=float32)	ndarray
+
+(1,)

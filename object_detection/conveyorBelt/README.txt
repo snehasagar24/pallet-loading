@@ -1,0 +1,1 @@
+This is the first iteration of training an objet detection model to identify shipping boxes on a conveyor belt. Stock images of cardboard boxes were downloaded from the internet and used as training and test images. A SSD Mobile Net was used to train a single class (box) object detection model.

@@ -1,0 +1,5 @@
+Video_File/Stream_Name
+	Processed_Video
+	Thumbnails
+	OCR
+	Logs
